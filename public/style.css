@@ -1,21 +1,50 @@
+
+ * {
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
 body {
-  font-family: sans-serif;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-a {
-  text-decoration: none;
+.container {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
 }
 
-label {
-  display: block;
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-nav a {
+ul {
+  padding: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style: none;
+  margin: 5px;
+}
+
+li {
   display: inline-block;
-  margin: 1em;
+  width: 220px;
+  overflow: hidden;
+  margin: 5px;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+input, button {
+  font-size: 16px;
+  height: 50px;
+  width: auto;
+  border: 1px solid black;
+  outline: 1px;
 }
